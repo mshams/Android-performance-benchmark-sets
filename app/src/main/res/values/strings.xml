@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Benchmarks</string>
+    <string name="main_text">Android performance benchmark set\nby: Mohamad Shams</string>
+    <string name="main_btn_handlers">1. Event Handlers</string>
+</resources>

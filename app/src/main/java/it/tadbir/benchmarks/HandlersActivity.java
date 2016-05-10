@@ -20,14 +20,14 @@ public class HandlersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handlers);
 
-        txt = (TextView) findViewById(R.id.txtHandlersResult);
+        txt = (TextView) findViewById(R.id.txtHandResult);
         grp = (ViewGroup) findViewById(R.id.grpHandlers);
 
 
-        findViewById(R.id.btnHandlersSingle).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnHandSingle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count = Integer.parseInt(((TextView) findViewById(R.id.txtCount)).getText().toString());
+                count = Integer.parseInt(((TextView) findViewById(R.id.txtHandCount)).getText().toString());
 
                 for (int i = 0; i <= count; i++) {
                     Button btn = new Button(getBaseContext());
@@ -48,10 +48,10 @@ public class HandlersActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnHandlersMulti).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnHandMulti).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count = Integer.parseInt(((TextView) findViewById(R.id.txtCount)).getText().toString());
+                count = Integer.parseInt(((TextView) findViewById(R.id.txtHandCount)).getText().toString());
 
                 for (int i = 0; i <= count; i++) {
                     Button btn = new Button(getBaseContext());
@@ -70,7 +70,7 @@ public class HandlersActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnHandlersClear).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnHandClear).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 grp.removeAllViews();
@@ -78,7 +78,7 @@ public class HandlersActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnHandlersMem).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnHandMem).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addMemoryUsage();

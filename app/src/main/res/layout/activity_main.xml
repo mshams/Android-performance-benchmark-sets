@@ -33,6 +33,13 @@
                 android:text="@string/main_btn_handlers"
                 android:textSize="@dimen/main_text" />
 
+            <Button
+                android:id="@+id/btnMainConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_btn_conditions"
+                android:textSize="@dimen/main_text" />
+
 
         </LinearLayout>
 
